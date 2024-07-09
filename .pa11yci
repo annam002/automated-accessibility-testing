@@ -1,0 +1,12 @@
+{
+  "defaults": {
+    "timeout": 10000
+  },
+  "urls": [
+    "http://localhost:3000",
+    "http://localhost:3000/keyboard",
+    "http://localhost:3000/reflow",
+    "http://localhost:3000/spacing",
+    "http://localhost:3000/textsize"
+  ]
+}
