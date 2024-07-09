@@ -1,0 +1,21 @@
+{
+  "total": 2,
+  "passes": 1,
+  "errors": 1,
+  "results": {
+    "http://localhost:3000/": [],
+    "http://localhost:3000/labels": [
+      {
+        "code": "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Duplicate id attribute value \"birthdate\" found on the web page.",
+        "context": "<input id=\"birthdate\" type=\"date\" required=\"\" aria-required=\"true\">",
+        "selector": "#birthdate",
+        "runner": "htmlcs",
+        "runnerExtras": {},
+        "typeLabel": "Error"
+      }
+    ]
+  }
+}
