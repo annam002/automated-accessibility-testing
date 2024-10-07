@@ -14,6 +14,12 @@ test("should have appropriate heading", async () => {
 
 test("should have a button for the more information popup", async () => {
   render(<KeyboardExamplePage />);
+  const button = (await screen.findAllByRole("button"))[0];
+  expect(button).toHaveAccessibleName("More information");
+});
+
+test("alternative: should have a button for the more information popup", async () => {
+  render(<KeyboardExamplePage />);
   await screen.findByRole("button", {
     name: "More information",
   });
