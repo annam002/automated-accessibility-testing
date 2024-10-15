@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["vitest/importMeta", "node", "jest", "@testing-library/jest-dom"],
+    "types": ["vitest/importMeta", "node", "jest", "@testing-library/jest-dom", "cypress", "cypress-axe", "@testing-library/cypress", "cypress-real-events"],
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
