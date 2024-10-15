@@ -29,7 +29,11 @@ npm run test
 
 ## E2E tests
 
-The E2E tests use [Playwright](https://playwright.dev/). They need a running dev server.
+The E2E tests use [Playwright](https://playwright.dev/) (main branch) 
+or [Cypress](https://www.cypress.io/) (cypress branch).
+
+They need a running dev server.
+
 Like the unit tests, they also demonstrate the usage of [axe-core](https://github.com/dequelabs/axe-core).
 Note that some tests fail intentionally. This is documented in the code.
 To run:
