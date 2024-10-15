@@ -1,7 +1,9 @@
 // Examples for automated testing of keyboard accessibility:
 // - focus/tab order
-// - user flow with a keyboard
 // - focus style
+// Note: Cypress itself does not support pressing the tab key.
+// The plugin cypress-real-events is used for that.
+// See this issue for background info: https://github.com/cypress-io/cypress/issues/299
 
 describe("Keyboard navigation", () => {
   beforeEach(() => {
