@@ -16,15 +16,19 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended"
   ],
-  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "jsx-a11y"],
   "overrides": [
     {
       "files": ["src/**", "db/**"],
       "rules": {
         "no-unused-vars": "off",
-        "@typescript-eslint/no-unused-vars": "error"
+        "@typescript-eslint/no-unused-vars": "error",
+        "jsx-a11y/anchor-ambiguous-text": [2, {
+          "words": ["back"]
+        }]
       }
     }
   ],

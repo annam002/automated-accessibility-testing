@@ -17,6 +17,14 @@ The project contains a couple of test pages. Start the development server and vi
 npm run dev
 ```
 
+## Linting
+The linter plugin [eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y) asserts 
+accessibility best practices purely on the code basis and supports during coding.
+
+```bash
+npm run lint
+```
+
 ## Unit tests
 
 The unit test use [Vitest](https://vitest.dev/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). 
