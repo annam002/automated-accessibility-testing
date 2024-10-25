@@ -7,6 +7,7 @@
     "http://localhost:3000/keyboard",
     "http://localhost:3000/reflow",
     "http://localhost:3000/spacing",
-    "http://localhost:3000/textsize"
+    "http://localhost:3000/textsize",
+    "http://localhost:3000/bugpit"
   ]
 }

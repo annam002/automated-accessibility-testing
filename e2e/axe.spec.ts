@@ -5,7 +5,7 @@ import AxeBuilder from "@axe-core/playwright";
 
 test.describe("Axe tests", () => {
   test("should not have a11y violations", async ({ page }) => {
-    await page.goto("/");
+    await page.goto("/bugpit");
     const accessibilityScanResults = await new AxeBuilder({ page }).analyze();
     expect(accessibilityScanResults.violations).toEqual([]);
   });

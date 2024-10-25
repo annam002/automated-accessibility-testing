@@ -15,6 +15,9 @@ export default function Home() {
         <li>
           <a href="/spacing">Spacing (1.4.12)</a>
         </li>
+        <li>
+          <a href="/bugpit">Page with bugs</a>
+        </li>
       </ul>
     </main>
   );
