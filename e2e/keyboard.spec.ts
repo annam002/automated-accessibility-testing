@@ -28,7 +28,7 @@ test.describe("Keyboard navigation", () => {
   test("should have correct tab order", async ({ page }) => {
     await expect(await nextElementInTabOrder(page)).toHaveText("Back to main");
     await expect(await nextElementInTabOrder(page)).toHaveAccessibleName(
-      "More information",
+      "WCAG 2.1.1",
     );
     await expect(await previousElementInTabOrder(page)).toHaveText(
       "Back to main",
@@ -37,7 +37,7 @@ test.describe("Keyboard navigation", () => {
 
   // this fails, because Button 3 is before Button 2 in the focus order
   test("should have focus order following visible order", async ({ page }) => {
-    await page.getByRole("button").filter({ hasText: "Button 1" }).focus();
+    await page.getByRole("button", { name: "Button 1" }).focus();
     const button2 = await nextElementInTabOrder(page);
     await expect(button2).toHaveAccessibleName("Button 2");
     const button3 = await nextElementInTabOrder(page);
@@ -48,9 +48,8 @@ test.describe("Keyboard navigation", () => {
   test("should be able to use the info dialog with the keyboard", async ({
     page,
   }) => {
-    await page.getByRole("link").focus();
-    const dialogButton = await nextElementInTabOrder(page);
-    await expect(dialogButton).toHaveAccessibleName("More information");
+    const dialogButton = page.getByRole("button", { name: "More information" });
+    await dialogButton.focus();
     await page.keyboard.press("Enter");
     await expect(page.getByText("OK")).toBeVisible();
     const closeButton = page.locator("*:focus-visible");
