@@ -4,16 +4,16 @@ export default function Home() {
       <h1 className="text-3xl">Test pages</h1>
       <ul className="text-xl">
         <li>
-          <a href="/keyboard">Keyboard Navigation (2.1.1, 2.1.2)</a>
+          <a href="/keyboard">Keyboard Navigation</a>
         </li>
         <li>
-          <a href="/reflow">Reflow (1.4.10)</a>
+          <a href="/reflow">Reflow</a>
         </li>
         <li>
-          <a href="/textsize">Textsize (1.4.4)</a>
+          <a href="/textsize">Textsize</a>
         </li>
         <li>
-          <a href="/spacing">Spacing (1.4.12)</a>
+          <a href="/spacing">Spacing</a>
         </li>
         <li>
           <a href="/bugpit">Page with bugs</a>

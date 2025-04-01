@@ -7,19 +7,17 @@ test.describe("Aria Snapshots", () => {
     page,
   }) => {
     await page.goto("/keyboard");
-    await expect(page.locator("body")).toMatchAriaSnapshot(`
-      - main:
-        - heading "Keyboard navigation test cases" [level=1]
-        - link "Back to main"
-        - heading "Keyboard Accessible Dialog" [level=2]
-        - button "More information":
-          - img "More information"
-        - heading "Tab Order" [level=2]
-        - button "Button 1"
-        - button "Button 3"
-        - button "Button 2"
-      - alert
-    `);
+    await expect(page.locator("ul")).toMatchAriaSnapshot(`
+    - list:
+      - listitem:
+        - text: Can everything in the page be reached and used with the keyboard? See
+        - link "WCAG 2.1.1"
+      - listitem:
+        - text: Is the focus order logical? See
+        - link "WCAG 2.4.3"
+      - listitem:
+        - text: Can the keyboard user be trapped? See
+        - link "WCAG 2.1.2"`);
   });
 
   test("should have certain text in h1 heading", async ({ page }) => {

@@ -8,6 +8,13 @@ export default function BugExamplePage() {
         This page is full of accessibility bugs
       </div>
       <a href="/">Back</a>
+      <section className="w-full">
+        <h2>What to test here</h2>
+        <p>
+          This page is full of accessibility bugs. Run automated checks and find
+          out what the automated testing tools can detect.
+        </p>
+      </section>
       <div className="flex min-w-60 flex-col gap-2">
         <div className="text-xl font-bold">A buggy form</div>
         <input name="name" placeholder="Name" autoFocus={true} />

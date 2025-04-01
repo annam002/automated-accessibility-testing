@@ -10,19 +10,19 @@ export default function KeyboardExamplePage() {
         <ul>
           <li>
             Can everything in the page be reached and used with the keyboard?
-            See
+            See{" "}
             <a href="https://www.w3.org/WAI/WCAG22/quickref/#keyboard">
               WCAG 2.1.1
             </a>
           </li>
           <li>
-            Is the focus order logical? See
+            Is the focus order logical? See{" "}
             <a href="https://www.w3.org/WAI/WCAG22/quickref/#focus-order">
               WCAG 2.4.3
             </a>
           </li>
           <li>
-            Can the keyboard user be trapped? See
+            Can the keyboard user be trapped? See{" "}
             <a href="https://www.w3.org/WAI/WCAG22/quickref/#no-keyboard-trap">
               WCAG 2.1.2
             </a>
