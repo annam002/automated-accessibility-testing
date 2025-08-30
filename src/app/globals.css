@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:focus-visible {
-  outline: 2px solid gray;
-  outline-offset: 4px;
-  border-radius: 2px;
-}
